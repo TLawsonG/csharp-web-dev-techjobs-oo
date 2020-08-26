@@ -1,24 +1,26 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class Employer
+    public class Employer : JobField
     {
-        public int Id { get; }
+        /*public int Id { get; }
         private static int nextId = 1;
-        public string Value { get; set; }
+        //public string Value { get; set; }*/
 
-        public Employer()
+
+
+      /*  public Employer() 
         {
             Id = nextId;
             nextId++;
         }
-
-        public Employer(string value) : this()
+      */
+        public Employer(string value) : base(value)
         {
-            Value = value;
+      
         }
 
-        public override bool Equals(object obj)
+       /* public override bool Equals(object obj)
         {
             return obj is Employer employer &&
                    Id == employer.Id;
@@ -32,6 +34,7 @@ namespace TechJobsOO
         public override string ToString()
         {
             return Value;
-        }
+        }*/
     }
+  
 }

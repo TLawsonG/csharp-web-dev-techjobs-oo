@@ -1,11 +1,11 @@
 ﻿using System;
 namespace TechJobsOO
 {
-    public class CoreCompetency
+    public class CoreCompetency : JobField
     {
-        private int id;
+        /*private int id;
         private static int nextId = 1;
-        private string value;
+        public string Value;
 
         // TODO: Change the fields to auto-implemented properties.
 
@@ -13,14 +13,14 @@ namespace TechJobsOO
         {
             id = nextId;
             nextId++;
-        }
+        }*/
 
-        public CoreCompetency(string v) : this()
+        public CoreCompetency(string value) : base(value)
         {
-            value = v;
+
         }
 
-        public override bool Equals(object obj)
+       /* public override bool Equals(object obj)
         {
             return obj is CoreCompetency competency &&
                    id == competency.id;
@@ -33,8 +33,8 @@ namespace TechJobsOO
 
         public override string ToString()
         {
-            return value;
-        }
-    }
+            return Value;
+        }*/
     }
 }
+
